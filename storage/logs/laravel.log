@@ -1,0 +1,397 @@
+[2020-07-20 20:38:27] local.ERROR: could not find driver (SQL: PRAGMA foreign_keys = ON;) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 0): could not find driver (SQL: PRAGMA foreign_keys = ON;) at /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connection.php:671)
+[stacktrace]
+#0 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connection.php(631): Illuminate\\Database\\Connection->runQueryCallback()
+#1 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connection.php(465): Illuminate\\Database\\Connection->run()
+#2 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(266): Illuminate\\Database\\Connection->statement()
+#3 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/SQLiteConnection.php(33): Illuminate\\Database\\Schema\\Builder->enableForeignKeyConstraints()
+#4 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(282): Illuminate\\Database\\SQLiteConnection->__construct()
+#5 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\\Database\\Connectors\\ConnectionFactory->createConnection()
+#6 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\\Database\\Connectors\\ConnectionFactory->createSingleConnection()
+#7 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(131): Illuminate\\Database\\Connectors\\ConnectionFactory->make()
+#8 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(86): Illuminate\\Database\\DatabaseManager->makeConnection()
+#9 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(199): Illuminate\\Database\\DatabaseManager->connection()
+#10 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(167): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->getConnection()
+#11 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(608): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#12 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(93): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#13 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(64): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#14 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(541): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#15 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(81): Illuminate\\Database\\Migrations\\Migrator->usingConnection()
+#16 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#17 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): call_user_func_array()
+#18 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Container/Util.php(37): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#19 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure()
+#20 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(39): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#21 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Container/Container.php(592): Illuminate\\Container\\BoundMethod::call()
+#22 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Console/Command.php(134): Illuminate\\Container\\Container->call()
+#23 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Command/Command.php(258): Illuminate\\Console\\Command->execute()
+#24 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run()
+#25 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(911): Illuminate\\Console\\Command->run()
+#26 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(264): Symfony\\Component\\Console\\Application->doRunCommand()
+#27 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun()
+#28 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run()
+#29 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#30 /home/cuidado/Documentos/DebtGest/php_challeng/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#31 {main}
+
+[previous exception] [object] (PDOException(code: 0): could not find driver at /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70)
+[stacktrace]
+#0 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct()
+#1 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection()
+#2 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connectors/SQLiteConnector.php(37): Illuminate\\Database\\Connectors\\Connector->createConnection()
+#3 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(222): Illuminate\\Database\\Connectors\\SQLiteConnector->connect()
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connection.php(926): call_user_func()
+#6 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connection.php(458): Illuminate\\Database\\Connection->getPdo()
+#7 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connection.php(664): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}()
+#8 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connection.php(631): Illuminate\\Database\\Connection->runQueryCallback()
+#9 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connection.php(465): Illuminate\\Database\\Connection->run()
+#10 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(266): Illuminate\\Database\\Connection->statement()
+#11 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/SQLiteConnection.php(33): Illuminate\\Database\\Schema\\Builder->enableForeignKeyConstraints()
+#12 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(282): Illuminate\\Database\\SQLiteConnection->__construct()
+#13 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\\Database\\Connectors\\ConnectionFactory->createConnection()
+#14 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\\Database\\Connectors\\ConnectionFactory->createSingleConnection()
+#15 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(131): Illuminate\\Database\\Connectors\\ConnectionFactory->make()
+#16 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(86): Illuminate\\Database\\DatabaseManager->makeConnection()
+#17 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(199): Illuminate\\Database\\DatabaseManager->connection()
+#18 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(167): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->getConnection()
+#19 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(608): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#20 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(93): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#21 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(64): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#22 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(541): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#23 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(81): Illuminate\\Database\\Migrations\\Migrator->usingConnection()
+#24 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#25 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): call_user_func_array()
+#26 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Container/Util.php(37): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#27 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure()
+#28 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(39): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#29 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Container/Container.php(592): Illuminate\\Container\\BoundMethod::call()
+#30 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Console/Command.php(134): Illuminate\\Container\\Container->call()
+#31 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Command/Command.php(258): Illuminate\\Console\\Command->execute()
+#32 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run()
+#33 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(911): Illuminate\\Console\\Command->run()
+#34 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(264): Symfony\\Component\\Console\\Application->doRunCommand()
+#35 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun()
+#36 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run()
+#37 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#38 /home/cuidado/Documentos/DebtGest/php_challeng/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#39 {main}
+"} 
+[2020-07-20 20:40:09] local.ERROR: could not find driver (SQL: PRAGMA foreign_keys = ON;) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 0): could not find driver (SQL: PRAGMA foreign_keys = ON;) at /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connection.php:671)
+[stacktrace]
+#0 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connection.php(631): Illuminate\\Database\\Connection->runQueryCallback()
+#1 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connection.php(465): Illuminate\\Database\\Connection->run()
+#2 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(266): Illuminate\\Database\\Connection->statement()
+#3 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/SQLiteConnection.php(33): Illuminate\\Database\\Schema\\Builder->enableForeignKeyConstraints()
+#4 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(282): Illuminate\\Database\\SQLiteConnection->__construct()
+#5 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\\Database\\Connectors\\ConnectionFactory->createConnection()
+#6 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\\Database\\Connectors\\ConnectionFactory->createSingleConnection()
+#7 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(131): Illuminate\\Database\\Connectors\\ConnectionFactory->make()
+#8 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(86): Illuminate\\Database\\DatabaseManager->makeConnection()
+#9 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(199): Illuminate\\Database\\DatabaseManager->connection()
+#10 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(167): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->getConnection()
+#11 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(608): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#12 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(93): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#13 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(64): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#14 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(541): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#15 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(81): Illuminate\\Database\\Migrations\\Migrator->usingConnection()
+#16 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#17 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): call_user_func_array()
+#18 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Container/Util.php(37): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#19 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure()
+#20 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(39): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#21 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Container/Container.php(592): Illuminate\\Container\\BoundMethod::call()
+#22 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Console/Command.php(134): Illuminate\\Container\\Container->call()
+#23 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Command/Command.php(258): Illuminate\\Console\\Command->execute()
+#24 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run()
+#25 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(911): Illuminate\\Console\\Command->run()
+#26 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(264): Symfony\\Component\\Console\\Application->doRunCommand()
+#27 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun()
+#28 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run()
+#29 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#30 /home/cuidado/Documentos/DebtGest/php_challeng/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#31 {main}
+
+[previous exception] [object] (PDOException(code: 0): could not find driver at /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70)
+[stacktrace]
+#0 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct()
+#1 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection()
+#2 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connectors/SQLiteConnector.php(37): Illuminate\\Database\\Connectors\\Connector->createConnection()
+#3 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(222): Illuminate\\Database\\Connectors\\SQLiteConnector->connect()
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connection.php(926): call_user_func()
+#6 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connection.php(458): Illuminate\\Database\\Connection->getPdo()
+#7 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connection.php(664): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}()
+#8 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connection.php(631): Illuminate\\Database\\Connection->runQueryCallback()
+#9 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connection.php(465): Illuminate\\Database\\Connection->run()
+#10 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(266): Illuminate\\Database\\Connection->statement()
+#11 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/SQLiteConnection.php(33): Illuminate\\Database\\Schema\\Builder->enableForeignKeyConstraints()
+#12 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(282): Illuminate\\Database\\SQLiteConnection->__construct()
+#13 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(76): Illuminate\\Database\\Connectors\\ConnectionFactory->createConnection()
+#14 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate\\Database\\Connectors\\ConnectionFactory->createSingleConnection()
+#15 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(131): Illuminate\\Database\\Connectors\\ConnectionFactory->make()
+#16 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(86): Illuminate\\Database\\DatabaseManager->makeConnection()
+#17 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(199): Illuminate\\Database\\DatabaseManager->connection()
+#18 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(167): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->getConnection()
+#19 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(608): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#20 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(93): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#21 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(64): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#22 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(541): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#23 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(81): Illuminate\\Database\\Migrations\\Migrator->usingConnection()
+#24 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#25 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): call_user_func_array()
+#26 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Container/Util.php(37): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#27 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure()
+#28 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(39): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#29 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Container/Container.php(592): Illuminate\\Container\\BoundMethod::call()
+#30 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Console/Command.php(134): Illuminate\\Container\\Container->call()
+#31 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Command/Command.php(258): Illuminate\\Console\\Command->execute()
+#32 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run()
+#33 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(911): Illuminate\\Console\\Command->run()
+#34 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(264): Symfony\\Component\\Console\\Application->doRunCommand()
+#35 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun()
+#36 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run()
+#37 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#38 /home/cuidado/Documentos/DebtGest/php_challeng/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#39 {main}
+"} 
+[2020-07-20 20:43:04] local.ERROR: Not enough arguments (missing: "name"). {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): Not enough arguments (missing: \"name\"). at /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Input/Input.php:76)
+[stacktrace]
+#0 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Command/Command.php(253): Symfony\\Component\\Console\\Input\\Input->validate()
+#1 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run()
+#2 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(911): Illuminate\\Console\\Command->run()
+#3 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(264): Symfony\\Component\\Console\\Application->doRunCommand()
+#4 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun()
+#5 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run()
+#6 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#7 /home/cuidado/Documentos/DebtGest/php_challeng/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} 
+[2020-07-20 20:43:08] local.ERROR: Command "make" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make\" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test at /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php:644)
+[stacktrace]
+#0 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(228): Symfony\\Component\\Console\\Application->find()
+#1 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun()
+#2 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run()
+#3 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#4 /home/cuidado/Documentos/DebtGest/php_challeng/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#5 {main}
+"} 
+[2020-07-20 20:54:31] local.ERROR: Command "make" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make\" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test at /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php:644)
+[stacktrace]
+#0 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(228): Symfony\\Component\\Console\\Application->find()
+#1 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun()
+#2 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run()
+#3 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#4 /home/cuidado/Documentos/DebtGest/php_challeng/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#5 {main}
+"} 
+[2020-07-20 20:57:59] local.ERROR: Command "migration" is not defined.
+
+Did you mean one of these?
+    make:migration
+    migrate
+    migrate:fresh
+    migrate:install
+    migrate:refresh
+    migrate:reset
+    migrate:rollback
+    migrate:status {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"migration\" is not defined.
+
+Did you mean one of these?
+    make:migration
+    migrate
+    migrate:fresh
+    migrate:install
+    migrate:refresh
+    migrate:reset
+    migrate:rollback
+    migrate:status at /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php:644)
+[stacktrace]
+#0 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(228): Symfony\\Component\\Console\\Application->find()
+#1 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun()
+#2 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run()
+#3 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#4 /home/cuidado/Documentos/DebtGest/php_challeng/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#5 {main}
+"} 
+[2020-07-20 20:58:11] local.ERROR: There are no commands defined in the "migration" namespace.
+
+Did you mean this?
+    migrate {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"migration\" namespace.
+
+Did you mean this?
+    migrate at /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php:574)
+[stacktrace]
+#0 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(625): Symfony\\Component\\Console\\Application->findNamespace()
+#1 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(228): Symfony\\Component\\Console\\Application->find()
+#2 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun()
+#3 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run()
+#4 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#5 /home/cuidado/Documentos/DebtGest/php_challeng/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#6 {main}
+"} 
+[2020-07-20 21:03:59] local.ERROR: There are no commands defined in the "migration" namespace.
+
+Did you mean this?
+    migrate {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"migration\" namespace.
+
+Did you mean this?
+    migrate at /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php:574)
+[stacktrace]
+#0 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(625): Symfony\\Component\\Console\\Application->findNamespace()
+#1 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(228): Symfony\\Component\\Console\\Application->find()
+#2 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun()
+#3 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run()
+#4 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#5 /home/cuidado/Documentos/DebtGest/php_challeng/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#6 {main}
+"} 
+[2020-07-20 21:04:57] local.ERROR: Command "migrate:all" is not defined.
+
+Did you mean one of these?
+    migrate
+    migrate:fresh
+    migrate:install
+    migrate:refresh
+    migrate:reset
+    migrate:rollback
+    migrate:status {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"migrate:all\" is not defined.
+
+Did you mean one of these?
+    migrate
+    migrate:fresh
+    migrate:install
+    migrate:refresh
+    migrate:reset
+    migrate:rollback
+    migrate:status at /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php:644)
+[stacktrace]
+#0 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(228): Symfony\\Component\\Console\\Application->find()
+#1 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun()
+#2 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run()
+#3 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#4 /home/cuidado/Documentos/DebtGest/php_challeng/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#5 {main}
+"} 
+[2020-07-20 21:11:07] local.ERROR: Command "migrate:" is ambiguous.
+Did you mean one of these?
+    migrate:fresh    Drop all tables and re-run all migrations
+    migrate:install  Create the migration repository
+    migrate:refresh  Reset and re-run all migrations
+    migrate:reset    Rollback all database migrations
+    migrate:rollback Rollback the last database migration
+    migrate:status   Show the status of each migration. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"migrate:\" is ambiguous.
+Did you mean one of these?
+    migrate:fresh    Drop all tables and re-run all migrations
+    migrate:install  Create the migration repository
+    migrate:refresh  Reset and re-run all migrations
+    migrate:reset    Rollback all database migrations
+    migrate:rollback Rollback the last database migration
+    migrate:status   Show the status of each migration. at /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php:685)
+[stacktrace]
+#0 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(228): Symfony\\Component\\Console\\Application->find()
+#1 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun()
+#2 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run()
+#3 /home/cuidado/Documentos/DebtGest/php_challeng/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#4 /home/cuidado/Documentos/DebtGest/php_challeng/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#5 {main}
+"} 
