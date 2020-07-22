@@ -17,3 +17,22 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+/**
+ * Routes to Controller User
+ */
+Route::get('getAllUsers', 'UserController@getAllUsers');
+Route::post('insertUser',  'UserController@insertUser');
+Route::delete('deleteUser/{id}',  'UserController@deleteUser');
+
+
+/**
+ * Routes to Controller Movie
+ */
+Route::get('getAllMovies','MovieController@getAllMovies');
+
+
+/**
+ * Routes to Controller Review
+ */
+Route::get('getAllReviews','ReviewController@getAllReviews');
