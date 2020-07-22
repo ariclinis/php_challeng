@@ -31,7 +31,7 @@ List of functionalities:
 
 **constraints:** None
 
-**Use:** curl -X DELETE http://localhost:**YOUR_PORT**/insertUser/**ID_OF_USER**
+**Use:** curl -X DELETE http://localhost:YOUR_PORT/insertUser/ID_OF_USER
 
 **Exemple:** curl -X DELETE http://localhost:8000/deleteUser/15
    * Response: {"id":15,"name":"mario","created_at":"2020-07-22T10:22:33.000000Z","updated_at":"2020-07-22T10:22:33.000000Z"}
@@ -39,11 +39,11 @@ List of functionalities:
 
 ### Get all Users
 
-**inputs:** none
+**inputs:** None
 
 **constraints:** None
 
-**Use:** curl -X GET http://localhost:**YOUR_PORT**/getAllUsers
+**Use:** curl -X GET http://localhost:YOUR_PORT/getAllUsers
 
 **Exemple:** curl -X GET http://localhost:8000/getAllUsers
    * Response:[{"id":1,"name":"Ariclene"},{"id":2,"name":"Dr. Araceli Goyette"},{"id":3,"name":"Lavon Wunsch Jr."},{"id":4,"name":"Garth Franecki"},{"id":5,"name":"Salvador Jacobi"}]
