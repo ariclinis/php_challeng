@@ -25,7 +25,7 @@ List of functionalities:
    * Response: {"id":10,"user":"Ariclene","option":"create","status":"success"}
 
 
-### Delete new User
+### Delete User
 
 **inputs:** id of user
 
@@ -50,7 +50,7 @@ List of functionalities:
 
    ### Get Specific user
 
-**inputs:** None
+**inputs:** user_id
 
 **constraints:** None
 
@@ -60,7 +60,7 @@ List of functionalities:
    * Response:{"id":16,user":"Kade Morar","option":"get","status":"success"}
 
 
-   ### Create new Movie
+### Create new Movie
 
 **inputs:** name of Movie
 
@@ -72,7 +72,7 @@ List of functionalities:
    * Response: {"id":23,"movie":"Space","option":"create","status":"success"}
 
 
-### Delete new Movie
+### Delete Movie
 
 **inputs:** id of Movie
 
@@ -97,7 +97,7 @@ List of functionalities:
 
    ### Get Specific Movie
 
-**inputs:** None
+**inputs:** movie_id
 
 **constraints:** None
 
@@ -105,3 +105,50 @@ List of functionalities:
 
 **Exemple:** curl -X GET http://localhost:8000/getMovie/14
    * Response:{"id":14,"movie":"Cars","option":"get","status":"success"}
+
+### Create new Review
+
+**inputs:** name of Review
+
+**constraints:** movie_id and user_id must exist in the database.  
+
+**Use:** curl -X POST 'http://localhost:8000/insertReview?user_id=ID_OF_USER&movie_id=ID_OF_MOVIE&rating=RATING_OF_MOVIE&review=REVIEW_OF_MOVIE'
+
+**Exemple:** curl -X POST 'http://localhost:8000/insertReview?user_id=3&movie_id=2&rating=5&review=Bom'
+   * Response: {"id":35,"user_name":"Cornell Hackett","user_id":"3","movie_id":"2","movie":"Rambo","review":"Bom","rating":"5","option":"insert","status":"success"}
+
+
+### Delete Review
+
+**inputs:** id of Review
+
+**constraints:** None
+
+**Use:** curl -X DELETE http://localhost:YOUR_PORT/deleteReview/ID_OF_Review
+
+**Exemple:** curl -X DELETE http://localhost:8000/deleteReview/15
+   * Response: {"id":15,"user_name":"Rahul Rippin","user_id":"25","movie_id":"25","movie":"Cars","review":"Quo inventore ut aut. Vel magnam cumque ipsa incidunt nostrum. Dignissimos facere sunt aliquid hic.","rating":"2","option":"delete","status":"success"}
+
+
+### Get all Reviews
+
+**inputs:** None
+
+**constraints:** None
+
+**Use:** curl -X GET http://localhost:YOUR_PORT/getAllReviews
+
+**Exemple:** curl -X GET http://localhost:8000/getAllReviews
+   * Response:[{"id":"5","user_id":"3","name":"Cornell Hackett","movie_id":"1","movie":"Cars","review":"'Ol\u00e1 mundo'","rating":"4"},{"id":"8","user_id":"3","name":"Cornell Hackett","movie_id":"2","movie":"Rambo","review":"Ol\u00e1 mundo","rating":"5"},{"id":"9","user_id":"3","name":"Cornell Hackett","movie_id":"2","movie":"Rambo","review":"Ola mundo","rating":"5"},{"id":"11","user_id":"3","name":"Cornell Hackett","movie_id":"2","movie":"Rambo","review":"Ola mundo","rating":"5"},{"id":"12","user_id":"3","name":"Cornell Hackett","movie_id":"2","movie":"Rambo","review":"Ola mundo","rating":"5"}]
+  
+  
+   ### Get Specific Review
+
+**inputs:** id of Review
+
+**constraints:** None
+
+**Use:** curl -X GET http://localhost:YOUR_PORT/getReview/Review_ID
+
+**Exemple:** curl -X GET http://localhost:8000/getReview/14
+   * Response: {"id":14,"user_name":"Cynthia Gerhold","user_id":"41","movie_id":"41","movie":"Rambo","review":"Non atque sint qui libero qui quam. Velit ab sed eligendi quod porro. Cumque ratione rem facilis.","rating":"2","option":"get","status":"success"}
