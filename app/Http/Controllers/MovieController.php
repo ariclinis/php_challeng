@@ -48,7 +48,7 @@ class MovieController extends Controller
     public function getMovie($id){
         $movie = Movie::find($id);
         $this->foundMovie($movie,"get");
-        return response()->json($movie,201);
+        return response()->json($this->dataMovie($movie,"get","success"),201);
     }
 
     /**

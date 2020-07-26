@@ -76,7 +76,8 @@ class UserController extends Controller
      * @return object with all data to show in response 
      */
     private function dataUser(User $user,$option,$status){
-        return ["user"=>$user->name,
+        return ["id"=>$user->id,
+                "user"=>$user->name,
                 "option"=>$option,
                 "status"=>$status];
     }

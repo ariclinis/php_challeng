@@ -22,7 +22,7 @@ List of functionalities:
 **Use:** curl -X POST http://localhost:YOUR_PORT/insertUser?user=NAME_OF_USER
 
 **Exemple:** curl -X POST http://localhost:8000/insertUser?user=Ariclene
-   * Response: {"user":"Ariclene","option":"create","status":"success"}
+   * Response: {"id":10,"user":"Ariclene","option":"create","status":"success"}
 
 
 ### Delete new User
@@ -34,7 +34,7 @@ List of functionalities:
 **Use:** curl -X DELETE http://localhost:YOUR_PORT/deleteUser/ID_OF_USER
 
 **Exemple:** curl -X DELETE http://localhost:8000/deleteUser/15
-   * Response: {"user":"Dr. Alvena Gutmann","option":"delete","status":"success"}
+   * Response: {"id":15,user":"Dr. Alvena Gutmann","option":"delete","status":"success"}
 
 
 ### Get all Users
@@ -57,7 +57,7 @@ List of functionalities:
 **Use:** curl -X GET http://localhost:YOUR_PORT/getuser/USER_ID
 
 **Exemple:** curl -X GET http://localhost:8000/getUser/16
-   * Response:{"user":"Kade Morar","option":"get","status":"success"}
+   * Response:{"id":16,user":"Kade Morar","option":"get","status":"success"}
 
 
    ### Create new Movie
@@ -69,7 +69,7 @@ List of functionalities:
 **Use:** curl -X POST http://localhost:YOUR_PORT/insertMovie?Movie=NAME_OF_Movie
 
 **Exemple:** curl -X POST http://localhost:8000/insertMovie?movie=Space
-   * Response: {"movieId":23,"movie":"Space","option":"create","status":"success"}
+   * Response: {"id":23,"movie":"Space","option":"create","status":"success"}
 
 
 ### Delete new Movie
@@ -81,7 +81,7 @@ List of functionalities:
 **Use:** curl -X DELETE http://localhost:YOUR_PORT/deleteMovie/ID_OF_Movie
 
 **Exemple:** curl -X DELETE http://localhost:8000/deleteMovie/15
-   * Response: {"movieId":23,"movie":"Space","option":"delete","status":"success"}
+   * Response: {"id":23,"movie":"Space","option":"delete","status":"success"}
 
 
 ### Get all Movies
@@ -103,5 +103,5 @@ List of functionalities:
 
 **Use:** curl -X GET http://localhost:YOUR_PORT/getMovie/Movie_ID
 
-**Exemple:** curl -X GET http://localhost:8000/getMovie/16
-   * Response:{"Movie":"Kade Morar","option":"get","status":"success"}
+**Exemple:** curl -X GET http://localhost:8000/getMovie/14
+   * Response:{"id":14,"movie":"Cars","option":"get","status":"success"}
