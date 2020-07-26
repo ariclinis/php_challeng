@@ -50,7 +50,7 @@ List of functionalities:
 
    ### Get Specific user
 
-**inputs:** user_id
+**inputs:** id of user
 
 **constraints:** None
 
@@ -97,7 +97,7 @@ List of functionalities:
 
    ### Get Specific Movie
 
-**inputs:** movie_id
+**inputs:** id of movie
 
 **constraints:** None
 
@@ -164,7 +164,7 @@ List of functionalities:
 
 **Exemple:** curl -X GET http://localhost:8000/getAverageRatingOfUser/2
    * Response: [{"average":"4.0","user_id":"2","user_name":"Clement Cruickshank"}]
-   
+
 ### Get Average rating of Movie
 
 **inputs:** id of movie
