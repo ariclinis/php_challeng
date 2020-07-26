@@ -38,7 +38,7 @@ class MovieController extends Controller
         $movie = Movie::find($id);
         $this->foundMovie($movie,"delete"); // Found Movie
         Movie::find($id)->delete();
-        return response()->json($this->dataMovie($movie,"delete","success"),201);
+        return response()->json($this->dataMovie($movie,"delete","success"),204);
     }
 
     /**
@@ -48,7 +48,7 @@ class MovieController extends Controller
     public function getMovie($id){
         $movie = Movie::find($id);
         $this->foundMovie($movie,"get");
-        return response()->json($this->dataMovie($movie,"get","success"),201);
+        return response()->json($this->dataMovie($movie,"get","success"),200);
     }
 
     /**
@@ -84,5 +84,4 @@ class MovieController extends Controller
                 "option"=>$option,
                 "status"=>$status];
     }
-
 }

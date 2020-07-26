@@ -42,7 +42,7 @@ class ReviewController extends Controller
         $review->review = $request->review;
         $review->save();
         $review = Review::all()->last();
-        return response()->json($this->dataReview($review,"insert","success"));
+        return response()->json($this->dataReview($review,"create","success"),201);
     }
 
 
@@ -70,7 +70,7 @@ class ReviewController extends Controller
         $review = Review::find($id);
         $this->foundReview($review,"delete"); // Found review
         Review::find($id)->delete();
-        return response()->json($this->dataReview($review,"delete","success"),201);
+        return response()->json($this->dataReview($review,"delete","success"),204);
     }
 
      /**
@@ -83,7 +83,7 @@ class ReviewController extends Controller
             echo '{"message":"Record not found!"}';
             exit();
         }
-        return response()->json($this->dataReview($review,"get","success"),201);
+        return response()->json($this->dataReview($review,"get","success"),200);
     }
 
     /**
@@ -109,8 +109,8 @@ class ReviewController extends Controller
      */
     private function dataReview(Review $review,$option,$status){
         return ["id"=>$review->id,
-                "user_name"=>$review->User->name,
                 "user_id"=>$review->user_id,
+                "user_name"=>$review->User->name,
                 "movie_id"=>$review->movie_id,
                 "movie"=>$review->Movie->movie,
                 "review"=>$review->review,

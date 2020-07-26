@@ -36,7 +36,7 @@ class UserController extends Controller
         $user = User::find($id);
         $this->foundUser($user,"delete"); // Found user
         User::find($id)->delete();
-        return response()->json($this->dataUser($user,"delete","success"),201);
+        return response()->json($this->dataUser($user,"delete","success"),204);
     }
 
     /**
@@ -54,7 +54,7 @@ class UserController extends Controller
     public function getUser($id){
         $user = User::find($id);
         $this->foundUser($user,"get");
-        return response()->json($this->dataUser($user,"get","success"),201);
+        return response()->json($this->dataUser($user,"get","success"),200);
     }
 
     /**

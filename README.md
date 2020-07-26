@@ -115,7 +115,8 @@ List of functionalities:
 **Use:** curl -X POST 'http://localhost:8000/insertReview?user_id=ID_OF_USER&movie_id=ID_OF_MOVIE&rating=RATING_OF_MOVIE&review=REVIEW_OF_MOVIE'
 
 **Exemple:** curl -X POST 'http://localhost:8000/insertReview?user_id=3&movie_id=2&rating=5&review=Bom'
-   * Response: {"id":35,"user_name":"Cornell Hackett","user_id":"3","movie_id":"2","movie":"Rambo","review":"Bom","rating":"5","option":"insert","status":"success"}
+   * Response: {"id":35,
+   "user_id":"3","user_name":"Cornell Hackett","movie_id":"2","movie":"Rambo","review":"Bom","rating":"5","option":"insert","status":"success"}
 
 
 ### Delete Review
@@ -127,7 +128,7 @@ List of functionalities:
 **Use:** curl -X DELETE http://localhost:YOUR_PORT/deleteReview/ID_OF_Review
 
 **Exemple:** curl -X DELETE http://localhost:8000/deleteReview/15
-   * Response: {"id":15,"user_name":"Rahul Rippin","user_id":"25","movie_id":"25","movie":"Cars","review":"Quo inventore ut aut. Vel magnam cumque ipsa incidunt nostrum. Dignissimos facere sunt aliquid hic.","rating":"2","option":"delete","status":"success"}
+   * Response: {"id":15,"user_id":"25","user_name":"Rahul Rippin","movie_id":"25","movie":"Cars","review":"Quo inventore ut aut. Vel magnam cumque ipsa incidunt nostrum. Dignissimos facere sunt aliquid hic.","rating":"2","option":"delete","status":"success"}
 
 
 ### Get all Reviews
@@ -151,4 +152,4 @@ List of functionalities:
 **Use:** curl -X GET http://localhost:YOUR_PORT/getReview/Review_ID
 
 **Exemple:** curl -X GET http://localhost:8000/getReview/14
-   * Response: {"id":14,"user_name":"Cynthia Gerhold","user_id":"41","movie_id":"41","movie":"Rambo","review":"Non atque sint qui libero qui quam. Velit ab sed eligendi quod porro. Cumque ratione rem facilis.","rating":"2","option":"get","status":"success"}
+   * Response: {"id":14,"user_id":"41","user_name":"Cynthia Gerhold","movie_id":"41","movie":"Rambo","review":"Non atque sint qui libero qui quam. Velit ab sed eligendi quod porro. Cumque ratione rem facilis.","rating":"2","option":"get","status":"success"}
