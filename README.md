@@ -11,7 +11,7 @@ List of functionalities:
    * Get average rating of movie
    * Get average rating of user
 
-## Functions already Implements
+## Functions Implements
 
 ### Create new User
 
