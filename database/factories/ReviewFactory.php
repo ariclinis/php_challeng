@@ -10,7 +10,7 @@ $factory->define(Review::class, function (Faker $faker) {
     return [
         'user_id' => factory(App\User::class),
         'movie_id' => factory(App\Movie::class),
-        'rating' => rand(0,5),
+        'rating' => rand(1,4),
         'review' => $faker->paragraph
     ];
 });

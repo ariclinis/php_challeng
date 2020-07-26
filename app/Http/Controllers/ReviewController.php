@@ -87,6 +87,38 @@ class ReviewController extends Controller
     }
 
     /**
+     * @param id user
+     * @return object json with average rating of user
+     */
+    public function getAverageRatingOfUser(int $idUser){
+        $reviews = Review::where('user_id','=',$idUser)
+                    ->join('users', 'users.id', '=', 'reviews.user_id');
+
+        $reviews = $reviews->select(DB::raw('avg(rating) as average, user_id, users.name as user_name'))
+                            ->orderBy('user_id', 'desc')
+                            ->groupBy('user_id')
+                            ->get();
+        
+        return response()->json($reviews,201);
+     }
+
+    /**
+     * @param id user
+     * @return object json with average rating of user
+     */
+    public function getAverageRatingOfMovie(int $idMovie){
+        $reviews = Review::where('movie_id','=',$idMovie)
+                    ->join('movies', 'movies.id', '=', 'reviews.movie_id');
+
+        $reviews = $reviews->select(DB::raw('avg(rating) as average, movie_id, movies.movie as movie'))
+                            ->orderBy('movie_id', 'desc')
+                            ->groupBy('movie_id')
+                            ->get();
+        
+        return response()->json($reviews,201);
+     }
+
+    /**
      * @param review
      * @param option
      * @return object with status error 
@@ -118,4 +150,7 @@ class ReviewController extends Controller
                 "option"=>$option,
                 "status"=>$status];
     }
+
+    
+
 }

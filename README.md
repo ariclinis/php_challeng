@@ -153,3 +153,25 @@ List of functionalities:
 
 **Exemple:** curl -X GET http://localhost:8000/getReview/14
    * Response: {"id":14,"user_id":"41","user_name":"Cynthia Gerhold","movie_id":"41","movie":"Rambo","review":"Non atque sint qui libero qui quam. Velit ab sed eligendi quod porro. Cumque ratione rem facilis.","rating":"2","option":"get","status":"success"}
+
+### Get Average rating of User
+
+**inputs:** id of user
+
+**constraints:** None
+
+**Use:** curl -X GET http://localhost:YOUR_PORT/getAverageRatingOfUser/User_ID
+
+**Exemple:** curl -X GET http://localhost:8000/getAverageRatingOfUser/2
+   * Response: [{"average":"4.0","user_id":"2","user_name":"Clement Cruickshank"}]
+   
+### Get Average rating of Movie
+
+**inputs:** id of movie
+
+**constraints:** None
+
+**Use:** curl -X GET http://localhost:YOUR_PORT/getAverageRatingOfMovie/Movie_ID
+
+**Exemple:** curl -X GET http://localhost:8000/getAverageRatingOfMovie/2
+   * Response: [{"average":"3.5","movie_id":"2","movie":"Rambo"}]

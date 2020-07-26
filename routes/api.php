@@ -42,3 +42,5 @@ Route::get('getAllReviews','ReviewController@getAllReviews');
 Route::post('insertReview',  'ReviewController@insertReview');
 Route::delete('deleteReview/{id}',  'ReviewController@deleteReview');
 Route::get('getReview/{id}',  'ReviewController@getReview');
+Route::get('getAverageRatingOfUser/{idUser}',  'ReviewController@getAverageRatingOfUser');
+Route::get('getAverageRatingOfMovie/{idMovie}',  'ReviewController@getAverageRatingOfMovie');
