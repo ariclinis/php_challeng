@@ -12,14 +12,14 @@ List of functionalities:
    * Get average rating of user
 
 ## Functions Implements
-| **Function User**              | **Function Movie**  |                          **Function Review** |
-| -------------  |                            -------------                        |         ------------- |
-| [Create new user](#new_user)          | [Create new movie](#new_movie)           | [Create new review](#new_review) |
-| [Delete user](#delete_user)           | [Delete movie](#delete_movie)            | [Delete review](#delete_review) |
-| [Get all users](#get_all_users)       | [Get all movies](#get_all_movies)        | [Get all reviews](#get_all_reviews) |
-| [Get specific user](#get_specific_user)| [Get specific movie](#get_specific_movie) | [Get specific review](#get_specific_reviews)|
-|                                       |                                          | [Get average riting of user](#get_avg_user)|
-|                                       |                                          | [Get average riting of movie](#get_avg_movie)|
+|**Method**| **Function User**              | **Function Movie**  |                          **Function Review** |
+|--| -------------  |                            -------------                        |         ------------- 
+|POST| [Create new user](#new_user)   | [Create new movie](#new_movie)      | [Create new review](#new_review) |
+|DELETE| [Delete user](#delete_user) | [Delete movie](#delete_movie)           | [Delete review](#delete_review) |
+|GET| [Get all users](#get_all_users) | [Get all movies](#get_all_movies) | [Get all reviews](#get_all_reviews) |
+|GET| [Get specific user](#get_specific_user)| [Get specific movie](#get_specific_movie) | [Get specific review](#get_specific_reviews)|
+|GET|                                       |                                          | [Get average riting of user](#get_avg_user)|
+|GET|                                       |                                          | [Get average riting of movie](#get_avg_movie)|
 
 <a id="new_user"></a>
 
@@ -132,7 +132,7 @@ List of functionalities:
 
 ### Create new Review
 
-**inputs:** name of Review
+**inputs:** id of user, id of movie, rating, review
 
 **constraints:** movie_id and user_id must exist in the database.  
 
