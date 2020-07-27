@@ -13,6 +13,15 @@ List of functionalities:
 
 ## Functions Implements
 
+| **Function User**|                    | **Function Movie**  |           | **Function Review** |
+| -------------|                        | ------------- |                 | ------------- |
+| [Create new user](#new_user) |         | [Create new movie](#ancora1)|   | [Create new review](#ancora1) |
+| [Delete user](#delete_user)  |            | [Delete movie](#ancora1)  |     | [Delete review](#ancora1) |
+| [Get all users](#ancora2) |           | [Get all movies](#ancora1)|     | [Get all reviews](#ancora1) |
+| [Get specific user](#ancora2) |       | [Get specific movie](#ancora1)| | [Get specific movie](#ancora1)|
+
+<a id="new_user"></a>
+
 ### Create new User
 
 **inputs:** name of user
@@ -25,6 +34,8 @@ List of functionalities:
    * Response: {"id":10,"user":"Ariclene","option":"create","status":"success"}
 
 
+<a id="delete_user"></a>
+
 ### Delete User
 
 **inputs:** id of user
@@ -36,6 +47,7 @@ List of functionalities:
 **Exemple:** curl -X DELETE http://localhost:8000/deleteUser/15
    * Response: {"id":15,user":"Dr. Alvena Gutmann","option":"delete","status":"success"}
 
+<a id="delete_user"></a>
 
 ### Get all Users
 
