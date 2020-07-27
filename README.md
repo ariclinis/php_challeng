@@ -13,7 +13,7 @@ List of functionalities:
 
 ## Functions Implements
 |**Method**| **Function User**              | **Function Movie**  |                          **Function Review** |
-|--| -------------  |                            -------------                        |         ------------- 
+|-----------| -------------  |                            -------------                        |         ------------- |
 |POST| [Create new user](#new_user)   | [Create new movie](#new_movie)      | [Create new review](#new_review) |
 |DELETE| [Delete user](#delete_user) | [Delete movie](#delete_movie)           | [Delete review](#delete_review) |
 |GET| [Get all users](#get_all_users) | [Get all movies](#get_all_movies) | [Get all reviews](#get_all_reviews) |
