@@ -13,12 +13,12 @@ List of functionalities:
 
 ## Functions Implements
 
-| **Function User**|                    | **Function Movie**  |           | **Function Review** |
-| -------------|                        | ------------- |                 | ------------- |
-| [Create new user](#new_user) |         | [Create new movie](#ancora1)|   | [Create new review](#ancora1) |
-| [Delete user](#delete_user)  |            | [Delete movie](#ancora1)  |     | [Delete review](#ancora1) |
+| **Function User**              | **Function Movie**  |          **Function Review** |
+| -------------                              -------------             ------------- |
+| [Create new user](#new_user)          | [Create new movie](#ancora1)|   | [Create new review](#ancora1) |
+| [Delete user](#delete_user)              | [Delete movie](#ancora1)  |     | [Delete review](#ancora1) |
 | [Get all users](#ancora2) |           | [Get all movies](#ancora1)|     | [Get all reviews](#ancora1) |
-| [Get specific user](#ancora2) |       | [Get specific movie](#ancora1)| | [Get specific movie](#ancora1)|
+| [Get specific user](#ancora2)        | [Get specific movie](#ancora1)| | [Get specific movie](#ancora1)|
 
 <a id="new_user"></a>
 
