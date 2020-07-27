@@ -1,4 +1,4 @@
-# php_challeng
+# php_challenge
 DebtGes Intern Software Engineer - PHP Challenge
 
 ## API requirements
