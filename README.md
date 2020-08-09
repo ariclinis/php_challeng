@@ -1,5 +1,5 @@
 # php_challenge
-DebtGes Intern Software Engineer - PHP Challenge
+A simple api to consume, developed in Laravel.
 
 ## API requirements
 List of functionalities:
