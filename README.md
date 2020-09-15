@@ -1,6 +1,11 @@
 # php_challenge
 A simple api to consume, developed in Laravel.
 
+# Data Structure
+
+You will work with the following data structure:
+
+![d](media/MovieStructure.png)
 ## API requirements
 List of functionalities:
 
