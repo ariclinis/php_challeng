@@ -5,7 +5,7 @@ A simple api to consume, developed in Laravel.
 
 I worked with the following data structure:
 
-![d](media/MovieStructure.png)
+![d](public/MovieStructure.png)
 ## API requirements
 List of functionalities:
 
